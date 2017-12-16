@@ -1,0 +1,538 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:20px;
+	color:#373737;
+	background-color:#FFFFFF;
+}
+a {
+	color:#575757;
+	text-decoration:none;
+}
+a:hover {
+	color:#000000;
+}
+ul, li, dl, dt, dd {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.clear {
+	clear:both;
+	font-size:0px;
+	line-height:0px;
+	height:0px;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+img {
+	border:none;
+}
+a {
+ blr:expression(this.onFocus=this.blur()); /* IE Opera */
+	outline:none; /* FF Opera */
+}
+a:focus {
+	-moz-outline-style: none; /* FF */
+}
+.en {
+	font-family:Arial, Helvetica, sans-serif;
+}
+#topdiv {
+	background:url(../images/topbg.png) repeat-x;
+	padding-top:19px;
+	height:135px;
+}
+#toplogo {
+	margin: 0 auto;
+	width: 141px;
+	height:115px;
+}
+#top {
+	width:1004px;
+	margin:0 auto;
+}
+.wlogo {
+	margin-top:-32px;
+}
+.tsearch {
+	background-color:#FFF;
+	text-align:left;
+	border:solid 1px #a5a5a5;
+	padding:5px;
+	margin-top:-45px;
+}
+.tsearch input {
+	border:none;
+	background:none;
+	color:#acacac;
+	height:18px;
+	line-height:18px;
+	vertical-align:middle;
+}
+.tsearch input.tsimg {
+	vertical-align:middle;
+	padding-left:5px;
+	border-left:solid 1px #a1a1a1
+}
+#menudiv {
+	width:1004px;
+	margin:0 auto;
+	height:43px;
+	line-height:43px;
+	font-size:14px;
+}
+#menudiv ul {
+	_width:560px;
+	_margin:0 auto;
+}
+#menudiv li {
+	width:90px;
+	margin:0px 1px;
+	display: inline-block;
+	_display: block;
+	_float:left;
+}
+#menudiv li a {
+	display:block;
+	color:#000;
+}
+#menudiv li a.selt, #menudiv li a:hover {
+	font-weight:bold;
+}
+/*BANNER*/
+#bannerdiv {
+	background-color:#000;
+	_background-color:#FFF;
+	position:relative;
+	width:100%;
+	height:558px;
+	overflow:hidden;
+	position:relative;
+}
+#bannerdiv .banner {
+	height:536px;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-800px;
+	display:none;
+}
+#bannerdiv .banner a {
+	display:block;
+	height:536px;
+}
+#bannerdiv ul {
+	height:536px;
+}
+#bannerdiv a.larrow, #bannerdiv a.rarrow {
+	margin:0;
+	display:inline-block;
+	margin-top:-22px;
+	position:relative;
+	z-index:1;
+	width:44px;
+	height:44px;
+	background-color:#000000;
+}
+#bannerdiv a.larrow {
+	background:url(../images/larrow.png) #000 no-repeat;
+}
+#bannerdiv a.rarrow {
+	margin-left:10px;
+	background:url(../images/rarrow.png) #000 no-repeat;
+}
+#banarrow a:hover {
+	background-color:#6c6c6c
+}
+#banarrow {
+	position:absolute;
+	width:100%;
+	_left:50%;
+	_width:300px;
+	_margin-left:-150px;
+	top:536px;
+	height:44px;
+	background-color:#FFF;
+}
+#container {
+	width:1004px;
+	margin:0 auto;
+	_overflow:hidden;
+}
+#container .htitle {
+	margin-top:58px;
+}
+#container .hcon {
+	line-height:25px;
+	padding:34px 0px;
+}
+.hmorebg {
+	border-top:dashed 1px #cbcbcb;
+	margin-top:34px;
+	height:31px;
+}
+.hmorebg img {
+	margin-top:-31px;
+}
+#hproduct {
+	width:1022px;
+	overflow:hidden;
+}
+#hproduct li {
+	width:237px;
+	float:left;
+	margin-right:18px;
+}
+#hproduct li i {
+	display:block;
+	margin-top:12px;
+	font-style:normal;
+}
+.pmore {
+	padding:10px 27px;
+	margin-top:40px;
+}
+.pmore a {
+	border:solid 1px #000;
+	border-radius:5px;
+	color:#FFF;
+	background-color:#252525;
+	padding:10px 27px;
+}
+.pmore a:hover {
+	background-color:#6c6c6c;
+	border:solid 1px #6c6c6c;
+}
+.ad {
+	margin-top:27px;
+	position:relative;
+}
+.ad a {
+	background-color:#000;
+	color:#FFF;
+	font-weight:bold;
+	border:solid 2px #FFF;
+	padding:8px 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+	width:104px;
+	margin: 0 auto;
+	position:absolute;
+	left:493px;
+	top:260px;
+	z-index:10;
+}
+.ad a:hover {
+	background-color:#6c6c6c;
+}
+#hnews {
+	width:1144px;
+	height:308px;
+	text-align:left;
+}
+#hnews li {
+	width:432px;
+	height:80px;
+	float:left;
+	margin-right:140px;
+	margin-bottom:74px;
+}
+#hnews li .date {
+	width:70px;
+	height:66px;
+	float:left;
+	background:url(../images/hnewsbg.png) no-repeat right;
+	position:relative;
+	color:#575757;
+}
+#hnews li .day {
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:36px;
+}
+#hnews li .month {
+	position:absolute;
+	left:42px;
+	top:38px;
+	font-size:24px;
+}
+#hnews li .newscon {
+	width:350px;
+	float:right;
+	font-family: "宋体", "微软雅黑", Arial, Helvetica, sans-serif;
+}
+#hnews li .newscon a {
+	display:block;
+	height:70px;
+	color:#7f7e7e;
+}
+#hnews li .newscon h2 {
+	font-size:14px;
+	line-height:20px;
+	height:20px;
+	overflow:hidden;
+	margin:0px;
+	padding:0px;
+	color:#575757;
+}
+#hnews li .newscon p {
+	margin:0px;
+	padding:0px;
+	line-height:20px;
+	margin-top:10px;
+}
+#hnews li .newscon a:hover {
+	color:#575757
+}
+#totop {
+	position:relative;
+	height:39px;
+}
+#totop a {
+	width:21px;
+	height:19px;
+	padding:10px;
+	background-color:#000;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#totop a:hover {
+	background-color:#6c6c6c;
+}
+#hcode {
+	position:absolute;
+	width:97px;
+	top:0;
+	right:0;
+}
+#hcode #ovimg {
+	background:url(../images/code.png) no-repeat;
+	width:97px;
+	height:105px;
+}
+#hcode #hidimg {
+	position:absolute;
+	right:0px;
+	top:-103px;
+	display:none;
+}
+#hcode i {
+	font-style:normal;
+	font-size:13px;
+	color:#727481;
+	display:block;
+	margin-top:10px;
+}
+#footerdiv {
+	background-color:#000;
+	padding-bottom:15px;
+}
+#footer {
+	width:1004px;
+	margin:0 auto;
+}
+#fmenu {
+	padding-top:37px;
+	height:30px;
+	margin-left:-15px;
+}
+#fmenu li {
+	float:left;
+}
+#fmenu li a {
+	font-size:14px;
+	color:#b6b6b6;
+	display:block;
+	width:80px;
+	padding:5px 3px;
+	border: solid 1px #000
+}
+#fmenu li a:hover {
+	border: solid 1px #a0a0a0
+}
+#fright {
+	clear:both;
+	text-align:left;
+	margin-top:40px;
+	color:#737373;
+}
+#fright a {
+	font-weight:bold;
+	color:#737373
+}
+/*内页CSS*/
+#webbannerdiv {
+	text-align:center;
+	background-color:#000;
+	position:relative;
+	height:288px;
+	width:100%;
+	overflow:hidden;
+}
+#webbannerdiv img {
+	position:absolute;
+	left:50%;
+	margin-left:-800px;
+}
+#darrow {
+	position:relative;
+	height:45px;
+	z-index:999;
+	margin-top:-20px;
+}
+#webmain {
+	width:1004px;
+	margin:73px auto 50px;
+	text-align:left;
+}
+#webleft {
+	width:161px;
+	float:left;
+	min-height:456px;
+	_height:456px;
+	background:url(../images/webl.png) no-repeat right;
+}
+#webleft li {
+	font-size:16px;
+	line-height:30px;
+	margin-bottom:5px;
+}
+#webleft li a.select {
+	font-weight:bold;
+}
+#webright {
+	width:779px;
+	float:right;
+	font-size:14px;
+}
+#position {
+	height:30px;
+	margin-bottom:20px;
+}
+#webright h1.locah1 {
+	font-size:24px;
+	line-height:30px;
+	font-weight:normal;
+	margin:0;
+	display:inline;
+	float:left;
+}
+#position #location {
+	float:right;
+	line-height:30px;
+	font-size:12px;
+}
+#location a.seltitle {
+	color:#ff0901;
+}
+/*页码*/
+#page {
+	text-align:center;
+	line-height:45px;
+	font-size:14px;
+	margin-top:20px;
+}
+#page a {
+	display:inline-block;
+	margin:0px 5px;
+}
+#page .pageprv {
+	background:url(../images/pleft.png) no-repeat;
+	width:45px;
+	height:45px;
+	display:inline-block;
+	margin-right:5px;
+}
+#page .pageprv a {
+	background:url(../images/pleft.png) no-repeat;
+	margin:0px;
+}
+#page .pageprv a:hover {
+	background:url(../images/plefth.png) no-repeat;
+}
+#page .pagenext {
+	background:url(../images/pright.png) no-repeat;
+	width:45px;
+	height:45px;
+	display:inline-block;
+	margin-left:5px;
+}
+#page .pagenext a {
+	background:url(../images/pright.png) no-repeat;
+	margin:0px;
+}
+#page .pagenext a:hover {
+	background:url(../images/prighth.png) no-repeat;
+}
+#page a.select {
+	color:#ff0901;
+	font-weight:bold;
+}
+/*详情*/
+#viewimg {
+	width:400px;
+	float:left;
+}
+#viewimg img {
+	margin-bottom:5px;
+}
+#viewimg a {
+	display:block;
+	height:27px;
+	overflow:hidden;
+	line-height:27px;
+	padding-left:32px;
+	clear:both;
+	margin:20px 0px;
+}
+#viewimg a.pup {
+	background:url(../images/pup.png) no-repeat;
+}
+#viewimg a.pup:hover {
+	background:url(../images/puph.png) no-repeat;
+}
+#viewimg a.pdown {
+	background:url(../images/pdown.png) no-repeat;
+}
+#viewimg a.pdown:hover {
+	background:url(../images/pdownh.png) no-repeat;
+}
+#detailc {
+	width:329px;
+	float:right;
+}
+#detailc h3 {
+	font-size:24px;
+	line-height:25px;
+	margin:0 0 0px;
+	font-weight:bold;
+}
+#detailc h4 {
+	margin:43px 0px;
+	font-weight:normal;
+}
+#webright .contentc {
+	font-size:12px;
+}
+.contentc h2 {
+	font-size:18px;
+	font-weight:600;
+	margin:0 0 10px;
+}
+.contentc p {
+	margin:2px 0px;
+}

@@ -1,0 +1,4 @@
+INSERT INTO `dede_search_keywords` VALUES('1','请输入关键词','请输入关键词 关键词 输入','2','0','1435116611','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','表带','表带','5','0','1435116638','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','皮带在夏天或运','皮带在夏天或运 夏天 皮带','1','0','1435116483','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','请输入关键表带萨芬词','请输入关键表带萨芬词 关键 萨芬 表带 输入','1','0','1435116534','0','0');

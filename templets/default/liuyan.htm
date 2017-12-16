@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/skin/css/css.css" type="text/css" rel="stylesheet" rev="stylesheet" />
+<script type="text/javascript" src="/skin/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/skin/js/index.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div id="webbannerdiv"> <img src="/skin/images/20150423175406752.png" alt="" width="1600" height="288" /> </div>
+<div id="darrow"><img src="/skin/images/darrow.png" alt="" width="45" height="45" /></div>
+<div id="container">
+<div id="webmain">
+  <div id="webleft">
+    <ul>
+      {dede:channel type='son' currentstyle="
+      <li><a href='~typelink~' class='select'>~typename~</a></li>
+      "}
+      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+  </div>
+  <div id="webright">
+    <div id="position">
+      <h1 class="locah1">{dede:field name='typename'/}</h1>
+      <span id="location">{dede:field name='position'/}</span></div>
+    <style type="text/css">
+#guestbook{
+	padding:27px 80px 10px;
+	font-family:"宋体", "微软雅黑";}
+#guestbook dt{
+	line-height:33px;
+	margin-bottom:10px;}
+#guestbook dd{
+	padding:10px 0px 0px;
+	line-height:30px;}
+#guestbook dd span{
+	display:inline-block;
+	width:10px;
+	margin-right:2px;}
+#guestbook dd span.red{
+	color:#F00;
+	font-family:Arial, Helvetica, sans-serif;
+	vertical-align:middle;}
+#guestbook textarea{
+	width:450px;
+	height:120px;
+	resize:none;
+	padding:5px;
+	border:solid 1px #a5a5a5;}
+#guestbook label{
+	float:left;}
+#guestbook dd input.inputdd{
+	border:solid 1px #a5a5a5;
+	padding:5px 5px;}
+input.tijiao, input.chongzhi{
+	background:none;
+	border:solid 1px #000;
+	width:110px;
+	font-size:16px;
+	line-height:32px;
+	cursor:pointer;
+	font-weight:bold;}
+input.chongzhi{
+	text-align:center;
+	margin-left:10px;}
+#guestbook dd#sub{
+	padding-left:80px;}
+</style>
+    <script language="javascript">
+<!--
+function validator()
+{
+ 	if(document.getElementById('name').value=="")
+	{alert("请输入您的姓名!"); document.getElementById('name').focus(); return false;}
+	if(document.getElementById('tel').value=="")
+	{alert("请输入您的电话!");document.getElementById('tel').focus();return false;}
+	if(document.getElementById('email').value=="")
+	{alert("请输入您的邮箱!");document.getElementById('email').focus();return false;}
+	if(document.all['content'].value=="")
+	{alert("请输入您的留言内容!");document.all['content'].focus();return false;}
+}
+-->
+</script>
+    <div id="guestbook">
+      <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="action" value="post">
+        <input type="hidden" name="diyid" value="1">
+        <input type="hidden" name="do" value="2">
+        <dl>
+          <dt>请您将个人信息在此填写，我们将在24小时内回复您想知道关于首饰的所有问题！</dt>
+          <dd><span class="red">*</span>联&nbsp;系&nbsp;人：
+            <input type='text' name='name' id='name'  class='inputdd' value='' />
+          </dd>
+          <dd><span class="red">*</span>联系电话：
+            <input type='text' name='tel' id='tel' class='inputdd' value='' />
+          </dd>
+          <dd><span class="red">*</span>联系邮箱：
+            <input type='text' name='email' id='email'  class='inputdd' value='' />
+          </dd>
+          <dd>
+            <label><span class="red">*</span>留&nbsp;&nbsp;&nbsp;&nbsp;言：</label>
+            <textarea name='content' id='content' cols='' rows=''></textarea>
+          </dd>
+          <input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;content,text">
+          <input type="hidden" name="dede_fieldshash" value="d9b40cea0dae237ac311bcf02a4a2a35">
+          <dd id="sub">
+            <input type="submit" name="submit" value="提 交" class='tijiao' />
+            <input type="reset" name="" value="重置" class="chongzhi" />
+          </dd>
+        </dl>
+      </form>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

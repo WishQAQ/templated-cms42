@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/skin/css/css.css" type="text/css" rel="stylesheet" rev="stylesheet" />
+<script type="text/javascript" src="/skin/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/skin/js/index.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div id="webbannerdiv"> <img src="/skin/images/20150423175421343.png" alt="" width="1600" height="288" /> </div>
+<div id="darrow"><img src="/skin/images/darrow.png" alt="" width="45" height="45" /></div>
+<div id="container">
+  <div id="webmain">
+    <div id="webleft">
+      <ul>
+        {dede:channel type='son' currentstyle="
+      <li><a href='~typelink~' class='select'>~typename~</a></li>
+      "}
+      <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+      {/dede:channel}
+      </ul>
+    </div>
+    <div id="webright">
+      <div id="position">
+        <h1 class="locah1">{dede:field name='typename'/}</h1>
+        <span id="location">{dede:field name='position'/}</span></div>
+      <style type="text/css">
+#webproduct ul{
+	width:795px;}
+#webproduct li{
+	width:142px;
+	height:184px;
+	float:left;
+	margin-right:17px;
+	margin-bottom:42px;}
+#webproduct li a.imga{
+	display:block;
+	height:142px;}
+#webproduct li a{
+	display:block;}
+#webproduct li h2{
+	font-size:14px;
+	font-weight:normal;
+	height:42px;
+	overflow:hidden;
+	line-height:42px;
+	margin:0;
+	text-align:center;}
+</style>
+      <div id="webproduct">
+        <ul>
+        {dede:list pagesize='10'}
+          <li><a class="imga" href="[field:arcurl/]"><img src="[field:picname/]" width="142" height="142" /></a>
+            <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+          </li>
+          {/dede:list}
+          
+        </ul>
+        <div class="clear"></div>
+        <div id="page">{dede:pagelist listitem="index,end,pre,next,pageno"/} </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  {dede:include filename="footer.htm"/}
+</body>
+</html>

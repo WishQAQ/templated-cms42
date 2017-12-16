@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="en-US">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/skin/css/css.css" type="text/css" rel="stylesheet" rev="stylesheet" />
+<script type="text/javascript" src="/skin/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/skin/js/index.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div id="bannerdiv" class="m_banner">
+  <div class="banner b1" id="banner1" style="display:block;"> <a href=""><img src="/skin/images/20150413092950923.jpg" /></a></div>
+  <div class="banner b3" id="banner3"> <a href=""><img src="/skin/images/20150413093009401.jpg"></a></div>
+  <div id="banarrow" class="banner_ctrl"><a class="larrow prev" href="javascript:;"></a><a class="rarrow next" href="javascript:;"></a></div>
+</div>
+<div id="container">
+<div class="htitle"><img src="/skin/images/t1.png" width="168" height="40" /></div>
+<div class="hcon">
+  <p> 表带，是对手表固定手腕有效部分的统称。表带材料多种多样，牛皮是最常见的一种，而鳄鱼皮则是最珍贵的一种， </p>
+  <p> <span style="line-height:1.5;">鳄鱼皮表带还被称为皮表带中的"铂金"。</span> </p>
+</div>
+<div class="hmorebg">{dede:type typeid='1'}<a href="[field:typelink/]"><img src="/skin/images/more.png" width="62" height="62" /></a> {/dede:type}</div>
+<div class="htitle"><img src="/skin/images/t2.png" width="251" height="40" /></div>
+<div class="hcon">
+  <ul id="hproduct">
+    {dede:arclist row=4 titlelen=32 typeid='8'}
+    <li><a href="[field:arcurl/]"><img src="[field:picname/]" width="237" height="237" /></a><i><a href="[field:arcurl/]">-[field:title/]-</a></i></li>
+    {/dede:arclist}
+  </ul>
+  <div class="pmore">{dede:type typeid='8'}<a href="[field:typelink/]">更多产品</a>{/dede:type}</div>
+</div>
+<div class="ad"><img src="/skin/images/20150413102717735.png" width="1004" height="341" />{dede:type typeid='5'}<a href="[field:typelink/]">READ MORE</a>{/dede:type}</div>
+<div class="htitle"><img src="/skin/images/t3.png" width="168" height="40" /></div>
+<div class="hcon">
+  <ul id="hnews">
+    {dede:arclist infolen='60' row=4 titlelen=32 typeid='11'}
+    <li>
+      <div class="date"><span class="day">[field:pubdate function="MyDate('d',@me)"/]</span><span class="month">[field:pubdate function="MyDate('m',@me)"/]</span></div>
+      <div class="newscon"><a href="/a/xinwenzixun/gongsixinwen/2015/0529/12.html">
+        <h2>[field:title/]</h2>
+        <p>[field:info/]...</p>
+        </a></div>
+    </li>
+    {/dede:arclist}
+  </ul>
+  <div class="clear"></div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
